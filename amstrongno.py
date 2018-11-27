@@ -1,3 +1,7 @@
+#title : Armstrong number
+#Ganesh Lohiya
+#M 36
+
 def armstrong_no(x):
  s=0
  z=x      #save x in z
