@@ -1,13 +1,18 @@
-from easygui import *
+# Title : online Shopping
+# Ganesh Lohiya
+# M 36
+
+
+from easygui import * # import easygui library
 import sys
-while 1:
- msgbox("welcome to online shopping")
- msg="which site would you prefer"
- title="online shopping"
- choices=["amazon","snapdeal","flipkart","myntra"]
- choice=choicebox(msg, title, choices)
+while 1:    # while loop
+ msgbox("welcome to online shopping")    
+ msg="which site would you prefer"   # msg to be viewed
+ title="online shopping"             # title for choice box
+ choices=["amazon","snapdeal","flipkart","myntra"] # choices to be made available
+ choice=choicebox(msg, title, choices) 
  msgbox("you choose:" + str(choice), "please press ok")
- if choice=="amazon":
+ if choice=="amazon":     # using if loop, the rest of the code can be made by using the same format
   msg1="what would you like to purchase"
   title1="diwali sale"
   choices1=["electronics","clothing","groceries","furniture"]
@@ -35,7 +40,7 @@ while 1:
        msgbox("vendor1 offers a price of 30000 Rs.\nvendor2 offers a price of 29500 Rs.\nvendor3 offers a price of 30500 Rs.")
      elif choice4=="samsung galaxy j 7":
        msgbox("vendor1 offers a price of 13000 Rs.\nvendor2 offers a price of 12500 Rs.\nvendor3 offers a price of 13500 Rs.")
-     else:
+     else:                            # end window will show 3 vendors offering their prices for the corresponding object
        sys.exit(0)
     elif choice3=="one plus":
      msg5="choose your model"
